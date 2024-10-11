@@ -1,0 +1,39 @@
+<!DOCTYPE >
+<html>
+
+<head>
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Student Enrollment Form - Sumago Infotech</h2>
+        <form id="enrollmentForm" onsubmit="return validateForm()">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="webdev">Web Development</option>
+                <option value="datascience">Data Science</option>
+                <option value="machinelearning">Machine Learning</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <input type="submit" value="Enroll">
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
